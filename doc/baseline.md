@@ -1,19 +1,18 @@
 # 百度飞浆智能车挑战赛 - 使用官方Baseline提交你的第一次结果
 
+
+
 > [第十六届全国大学生智能车竞赛线上资格赛：车道线检测 - 百度AI Studio - 人工智能学习与实训社区](https://aistudio.baidu.com/aistudio/competition/detail/68)
 
 ## 创建项目
 1. 在飞桨官网最上方点击 项目 - 创建项目
-[image:82D40ABA-9940-4CD0-ACCC-03E381066854-1512-000026D20ED3500E/750862FC-B243-424E-924A-35C7838B9F4E.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626190912.png)
 2. 按如下三图所示创建项目
-[image:C4555986-C17B-43B2-BDD0-A4925EC9EF46-1512-000026D6F6C28A36/6671DFAB-9FDD-40B9-B2EE-E5603EA5507C.png]
-[image:942F19D1-17E6-4DEE-B5C7-767F69CB14FD-1512-000026E1CE22609F/C498042C-0457-4AC8-ABAF-5CF2B1CD2DFD.png]
-[image:7A57780D-410E-4D38-9CD4-0091AF02AA60-1512-000026E7E01855AD/317F72DF-39FF-4D16-BDE9-B0B967E4CBB1.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626191221.png)
 3. 在第三步选择 「添加数据集」，然后搜索“车道线检测Baseline资源包”并添加
-[image:B71D9AD1-5AFA-4E6A-9433-427D77DF912F-1512-000026DF2C5CEE9A/78B6ECA8-6E0B-4F04-81DA-02A9FED47185.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626191231.png)
 4. 在我的项目中选择「启动环境」，并选择带有GPU的高级版本
-[image:39924069-37C4-4471-B13C-427961AF2618-1512-0000274E79757D18/7B9F2225-C8EF-4AF4-A3B7-001467AFF219.png]
-[image:99539B15-1BA7-465F-A242-0CF54415A890-1512-00002754596C4A8F/1BDCB39F-885A-47E0-96C2-DEA3277C94DB.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626191318.png)
 
 ---
 
@@ -35,7 +34,7 @@
 > 如果报路径相关错误推荐直接使用终端输入指令进行实验
 
 数据文件夹最终结构为
-[image:34519639-590E-42D4-A674-2A453DE1FCC6-1512-0000292E749648D4/89B27C67-E612-4A12-926B-542FBE0895E0.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626191530.png)
 - `image` `mask`是用来train的数据集
 - `infer`是最终用于predict提交结果的数据集
 
@@ -142,7 +141,7 @@ loss:
 ```
 其中的`save_interval`为多少轮训练之后保存结果
 重新训练时可以增加`--resume_model output/iter_4000`从上次的训练继续执行
-[image:A34A1A67-3C58-45E6-8D19-D60F45324761-1512-00002AAD4256BB17/729CE361-2F53-4362-9B54-B016E2E4F7C0.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626191410.png)
 
 ### 预测
 ```jupyter
@@ -166,11 +165,10 @@ loss:
 ```
 
 然后提交到官网（注意压缩包文件名必须为`predict`）
-[image:48B2BB1D-7A80-4875-AA44-812DB2CB9302-1512-00002B1353F945CE/1D4D79D5-2601-4018-9BC4-3C7F0C2371F6.png]
+![](https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210626191353.png)
 
 到此已经完成了第一次结果的提交🎉
 
 ---
 ## Resources
 官方Baseline说明：[官方第十六届全国大学生智能车竞赛线上资格赛-车道线检测Baseline - Baidu AI Studio - 人工智能学习与实训社区](https://aistudio.baidu.com/aistudio/projectdetail/1468678)
-
