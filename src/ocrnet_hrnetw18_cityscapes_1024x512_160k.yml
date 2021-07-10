@@ -1,0 +1,27 @@
+_base_: '../_base_/cityscapes.yml'
+
+model:
+  type: OCRNet
+  backbone:
+    type: HRNet_W18
+    pretrained: https://bj.bcebos.com/paddleseg/dygraph/hrnet_w18_ssld.tar.gz
+  num_classes: 15
+  backbone_indices: [0]
+  pretrained: null
+  
+
+optimizer:
+  type: sgd
+
+learning_rate:
+  value: 0.002
+  decay:
+    type: poly
+    power: 0.9
+    end_lr: 0.0
+    
+loss:
+  types:
+    - type: LovaszSoftmaxLoss
+    - type: LovaszSoftmaxLoss
+  coef: [1, 0.4]
