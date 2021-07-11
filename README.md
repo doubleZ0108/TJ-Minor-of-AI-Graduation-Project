@@ -18,7 +18,7 @@
 
 最后还是希望能把第一次AI比赛和人工智能辅修专业综合设计(论文)的一些资料和内容整理在此，算是对自己两年辅修经历的回顾，也希望能对你有所帮助
 
-<img src="/Users/doublez/Developer/Progressing/PaddleSeg/resources/比赛结果.png" alt="比赛结果" width="48%;" />
+<p align="center"><img src="https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210711230543.png" alt="比赛结果" width="48%;" /></p>
 
 <br/>
 
